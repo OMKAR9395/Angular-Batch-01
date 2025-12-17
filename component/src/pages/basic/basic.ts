@@ -47,3 +47,6 @@ export class Basic {
   }
 
 }
+function showMe(){
+  confirm("Hello World");
+}

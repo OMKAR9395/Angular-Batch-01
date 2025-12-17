@@ -1,0 +1,94 @@
+New Project =>	CMD	=>		ng new <Project Name>
+
+start	=>	main.ts
+edit 	=>	app.html	or index.html
+
+When We are creating a component it gives a 4 files
+1.HTMl				UI
+2.CSS				Interactive design
+3.TS				Logic
+4.spec.ts			Testing
+
+gitIgnore
+
+
+app.html code editable
+app.ts
+
+for application start ng serve/ng s
+
+generating component
+ng generate component <filename>
+ng g c <file name>
+
+
+@Component({
+selector:'<Component name which gives a user>'
+imports:[]
+templateUrl: './app.html',
+  styleUrl: './app.scss',
+
+
+})
+
+
+			basic component ts
+			app.ts/html
+			main.ts/html
+
+
+
+` hello world ${obj.name.surname}`
+
+{{}}		interpolation
+one way data communication
+ts	=>	html
+
+onClick	=>	event listeners
+(click) =>	event Binding 	()	is called event binding
+
+
+templateUrl: './app.html',  or
+template:	`<h1></h1>`
+
+
+
+ styleUrl: './basic.scss',	OR
+  styles:[]		multiple files link or custom style 
+
+In Angular 15+ 
+standalone
+by default true
+
+in imports array 
+classes , libraries,functions,Servises
+
+providers:[DatePipe],
+
+datepipe is method which used transform(param 1, param2)
+param 1 => what transform 
+param 2 => which transform
+
+
+addEventListener("clck",()=>{})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
