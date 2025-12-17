@@ -1,0 +1,20 @@
+h1 {
+  text-align: center;
+  color: black;
+  font-weight: 200px;
+  size: 20px;
+  background-color: aqua;
+}
+
+button {
+  border: radius 5px;
+  border-radius: 5px solid black;
+  color: white;
+  background: aqua;
+}
+
+/**
+app.html
+app.css
+app.ts
+*/
