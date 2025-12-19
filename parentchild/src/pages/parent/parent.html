@@ -1,0 +1,13 @@
+<!-- <h2>Parent</h2>
+<p>Selected : {{ studentName }}</p>
+
+<button (click)="changeName()">Click me</button>
+
+<hr />
+
+<app-child [name]="studentName"></app-child> -->
+<h1>Parent Component</h1>
+<button (click)="change()">Change Theme</button>
+<h4>In Parent Component {{ color }}</h4>
+<hr />
+<app-child [bgColor]="color"></app-child>

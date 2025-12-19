@@ -1,0 +1,40 @@
+<div>
+  <h2>Simple Calculator (Parent)</h2>
+
+  <input type="number" [(ngModel)]="num1" placeholder="Number 1" />
+  <input type="number" [(ngModel)]="num2" placeholder="Number 2" />
+
+  <select [(ngModel)]="operator">
+    <option value="+">+</option>
+    <option value="-">-</option>
+    <option value="*">*</option>
+    <option value="/">/</option>
+  </select>
+
+  <app-child
+    [a]="num1"
+    [b]="num2"
+    [op]="operator"
+    (calculated)="onResult($event)"
+    (error)="onError($event)"
+  ></app-child>
+
+  <!-- result -->
+  @if(result !== undefined){
+  <p>Result {{ result }}</p>
+  }
+
+  <!-- error -->
+  @if(error){
+  <p>Result {{ error }}</p>
+  }
+
+  <!-- history -->
+
+  <div>
+    <h3>history</h3>
+    <ul>
+      <li *ngFor="let h of history">{{ h }}</li>
+    </ul>
+  </div>
+</div>
