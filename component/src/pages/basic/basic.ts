@@ -1,5 +1,5 @@
 import { DatePipe } from '@angular/common';
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 @Component({
@@ -25,8 +25,9 @@ import { FormsModule } from '@angular/forms';
     templateUrl: './basic.html',
   styleUrl: './basic.scss',
 standalone:true,
-providers:[DatePipe]
+providers:[DatePipe],
 
+// changeDetection:ChangeDetectionStrategy.OnPush
 
 
 })
@@ -46,7 +47,4 @@ export class Basic {
     this.liveDate = this.date.transform(new Date(),'dd-MM-yyy');
   }
 
-}
-function showMe(){
-  confirm("Hello World");
 }

@@ -1,2 +1,5 @@
-<h1>Hello Fork Infosystem</h1>
-<app-basic></app-basic>
+<h2>Parent Component</h2>
+<input (onkeyup)="OnCHanges()" type="text" placeholder="Enter Name">
+<button (onkeyup)="OnCHanges()">Click me</button>
+<p>{{studentName}} </p>
+<app-on-changes [name] = "studentName"></app-on-changes>

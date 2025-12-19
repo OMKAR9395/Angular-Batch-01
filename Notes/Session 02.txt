@@ -69,13 +69,20 @@ datepipe is method which used transform(param 1, param2)
 param 1 => what transform 
 param 2 => which transform
 
-
 addEventListener("clck",()=>{})
 
+changeDetection:ChangeDetectionStrategy.OnPush			(Advance)
+encapsulation:ViewEncapsulation.None		parameters	1.Emulated(default)	2.None	3.ShadowDom
 
 
 
+binding characteristics and behaviour
+hiding from outside the world
 
+host:{
+'[class.active]':'true',
+
+}
 
 
 
